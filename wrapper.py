@@ -20,6 +20,10 @@ def strip_tags(html, invalid_tags):
     return soup.renderContents()
 
 class ESV:
+    """
+    This is a wrapper for the ESV API. This is where I will add functionality
+    for interfacing with the API.
+    """
 
     def __init__(self, key='IP'):
         self.api = ESVWebServiceAPI(key=key)
