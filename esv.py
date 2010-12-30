@@ -223,7 +223,6 @@ class ESVWebServiceAPI:
         
         # Build the URL from all combined options
         url = self._build_url(all_options, function['name'])
-        print url
         
         return urllib.urlopen(url)
         
